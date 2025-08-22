@@ -1,2 +1,1 @@
-# E-commerce-project
-Shopping one with enhanced interactivity
+Important data on relation to the best Dashboard

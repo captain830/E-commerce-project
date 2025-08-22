@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechWajane - Complete E-commerce Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" href="head.css">
+</head>
+<body>
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Header -->
+    <header class="head">
+        <a href="/" id="logo">
+            <i class="fas fa-store logo-icon"></i>
+            Tech<span>Wajane</span>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="nav-icons">
+            <button class="icon-btn" id="searchToggle">
+                <i class="fas fa-search"></i>
+            </button>
+            <button class="icon-btn" id="cartToggle">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </button>
+            <button class="btn" id="loginBtn">
+                <i class="fas fa-user"></i>Login
+            </button>
+        </div>
+    </header>
+    
+    <!-- Search Bar -->
+    <div class="search" id="searchBar">
+        <input type="search" placeholder="Search for products..." aria-label="Search products" id="searchInput">
+        <button type="submit" aria-label="Search">
+            <i class="fas fa-search"></i>
+        </button>            
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Welcome to <span>TechWajane</span></h1>
+            <p>Discover the latest tech gadgets with the best deals and exclusive offers</p>
+            <div class="hero-buttons">
+                <button class="btn hero-btn">Shop Now</button>
+                <button class="btn hero-btn secondary-btn">View Deals</button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Features Section -->
+    <section class="features">
+        <h2 class="section-title">Why Shop With Us</h2>
+        <div class="cards-container">
+            <!-- Card 1: Fast -->
+            <div class="gradient-card">
+                <div class="card-icon">
+                    <i class="fas fa-shipping-fast"></i>
+                </div>
+                <h3 class="card-title">Fast Delivery</h3>
+                <p class="card-description">Get your orders delivered to your doorstep within 24 hours in metro areas. We partner with leading logistics providers for quick and reliable shipping.</p>
+            </div>
+
+            <!-- Card 2: Reliable -->
+            <div class="gradient-card">
+                <div class="card-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3 class="card-title">Secure & Reliable</h3>
+                <p class="card-description">Shop with confidence. Our platform uses advanced encryption to protect your payments and personal data. We don't store your payment information.</p>
+            </div>
+
+            <!-- Card 3: Convenient -->
+            <div class="gradient-card">
+                <div class="card-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3 class="card-title">Mobile Friendly</h3>
+                <p class="card-description">Your entire store fits in your pocket. Our mobile-responsive design makes shopping convenient on any device, anywhere, anytime.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="products-header">
+            <h2 class="section-title">Featured Products</h2>
+            <div class="category-filter">
+                <button class="category-btn active" data-category="all">All Products</button>
+                <button class="category-btn" data-category="electronics">Electronics</button>
+                <button class="category-btn" data-category="audio">Audio</button>
+                <button class="category-btn" data-category="wearables">Wearables</button>
+                <button class="category-btn" data-category="accessories">Accessories</button>
+            </div>
+        </div>
+        <div class="product-grid" id="productGrid">
+            <!-- Products will be dynamically inserted here -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2 class="section-title text-center">Contact Us</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Address</h3>
+                            <p>123 Tech Plazza,Thika Town, Kiambu county, Kenya 254</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Phone</h3>
+                            <p>+254 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Email</h3>
+                            <p>support@techwajane.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Business Hours</h3>
+                            <p>Monday-Friday: 9AM - 8PM<br>Saturday-Sunday: 10AM - 6PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <h3>Send us a Message</h3>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" required>
+                            <option value="">Select a subject</option>
+                            <option value="support">Product Support</option>
+                            <option value="warranty">Warranty Claim</option>
+                            <option value="order">Order Inquiry</option>
+                            <option value="return">Return Request</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3 class="cart-title">Your Cart</h3>
+            <button class="close-cart" id="closeCart">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be dynamically inserted here -->
+            <div class="empty-cart">
+                <i class="fas fa-shopping-cart"></i>
+                <p>Your cart is empty</p>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotal">$0.00</span>
+            </div>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <i class="fas fa-check-circle"></i>
+        <span id="toastMessage">Product added to cart!</span>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About TechWajane</h3>
+                <p>We are your premier destination for the latest technology gadgets and accessories. Our mission is to make cutting-edge technology accessible to everyone.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <div class="footer-links">
+                    <a href="#home"><i class="fas fa-chevron-right"></i> Home</a>
+                    <a href="#products"><i class="fas fa-chevron-right"></i> Products</a>
+                    <a href="#contact"><i class="fas fa-chevron-right"></i> Contact Us</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> About Us</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> Privacy Policy</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> Terms & Conditions</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Information</h3>
+                <div class="footer-links">
+                    <a href="#"><i class="fas fa-map-marker-alt"></i> Thika Town, Kiambu, Kenya</a>
+                    <a href="tel:+2545551234567"><i class="fas fa-phone"></i> +1 (555) 123-4567</a>
+                    <a href="mailto:dndungu886@gmail.com.com"><i class="fas fa-envelope"></i> support@techwajane.com</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Subscribe to our newsletter to get updates on our latest products and special offers.</p>
+                <div class="newsletter-form">
+                    <input type="email" class="newsletter-input" placeholder="Your email address">
+                    <button class="newsletter-btn">Subscribe</button>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 TechWajane. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="head.js"></script>
+</body>
+</html>
